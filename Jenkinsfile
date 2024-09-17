@@ -26,6 +26,6 @@ pipeline {
                 archiveArtifacts artifacts: 'api-gateway/target/*.jar', followSymlinks: false
             }
         }
-        }
+        
     }
 }
