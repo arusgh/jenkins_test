@@ -25,6 +25,11 @@ pipeline {
                 junit stdioRetention: '', testResults: 'api-gateway/target/surefire-reports/*.xml'
                 archiveArtifacts artifacts: 'api-gateway/target/*.jar', followSymlinks: false
             }
+        stage('print') {
+            steps {
+                sh "echo testing"
+            }
+        }
         }
     }
 }
